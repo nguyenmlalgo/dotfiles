@@ -111,7 +111,7 @@ static const Key keys[] = {
     {MODKEY|ShiftMask, XK_b, spawn, SHCMD("~/dwm-dot/src/rofi-bluetooth")},
     {MODKEY|ShiftMask, XK_n, spawn, SHCMD("~/dwm-dot/src/netmenu.sh")},
     {MODKEY|ShiftMask, XK_v, spawn, SHCMD("rofi -modi \"clipboard:greenclip print\" -show clipboard -run-command '{cmd}'")},
-    {MODKEY|ShiftMask, XK_w, spawn, SHCMD("~/dwm-dot/src/WallSelect")},
+    {MODKEY|ShiftMask, XK_w, spawn, SHCMD("~/dwm-dot/src/WallSelect.sh")},
     {MODKEY|ShiftMask, XK_t, spawn, SHCMD("~/dwm-dot/src/tmux-rofi.sh")},
     {MODKEY|ShiftMask, XK_s, spawn, SHCMD("~/dwm-dot/src/screenshot.sh area")},
     {0,                XK_Print, spawn, SHCMD("~/dwm-dot/src/screenshot.sh full")},

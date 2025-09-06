@@ -6,7 +6,7 @@ for app in xorg-xdpyinfo imagemagick; do
 done
 
 # Set some variables
-wall_dir="${HOME}/Pictures/wallpapers"
+wall_dir=$(readlink -f "${HOME}/Pictures/wallpapers/")
 cacheDir="${HOME}/.cache/$(whoami)"
 rofi_command="rofi -dmenu -theme ${HOME}/.config/rofi/WallSelect.rasi -theme-str ${rofi_override}"
 
