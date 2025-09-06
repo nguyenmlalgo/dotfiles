@@ -1,0 +1,12 @@
+// Rofi colors for Mountain
+
+* {
+    font: "JetBrainsMono NF Bold 9";
+    background: #0f0f0f;
+    background-alt: #262626;
+    foreground: #f0f0f0;
+    selected: #4c4c4c;
+    active: #ac8a8c;
+    urgent: #8aac8b;
+}
+

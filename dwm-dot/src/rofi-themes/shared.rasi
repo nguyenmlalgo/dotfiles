@@ -1,0 +1,12 @@
+// Rofi colors for Gruvbox
+
+* {
+    font: "JetBrainsMono NF Bold 9";
+    background: #282828;
+    background-alt: #282828E0;
+    foreground: #ebdbb2;
+    selected: #458588;
+    active: #b8bb26;
+    urgent: #fb4934;
+}
+

@@ -1,0 +1,82 @@
+[config]
+reload_apps = true
+
+[config.wallpaper]
+command = "swww"
+arguments = [ "img", "-t", "fade", "--transition-duration", "0.5", "--transition-step", "255", "--transition-fps", "60", "-f", "Nearest",]
+set = true
+
+[templates.hyprland]
+input_path = "~/.config/Ax-Shell/config/matugen/templates/hyprland-colors.conf"
+output_path = "~/.config/Ax-Shell/config/hypr/colors.conf"
+
+[templates.ax-shell]
+input_path = "~/.config/Ax-Shell/config/matugen/templates/ax-shell.css"
+output_path = "~/.config/Ax-Shell/styles/colors.css"
+post_hook = "fabric-cli exec ax-shell 'app.set_css()' &"
+
+# [templates.yazi]
+# input_path = "~/.config/matugen/matugen-themes/templates/yazi-theme.toml"
+# output_path = "~/.config/yazi/theme.toml"
+
+# [templates.kitty]
+# input_path = "~/.config/matugen/matugen-themes/templates/kitty-colors.conf"
+# output_path = "~/.config/kitty/colors.conf"
+# post_hook = "kitty @ set-colors -a -c ~/.config/kitty/colors.conf"
+
+[templates.nvim]
+input_path = "~/.config/nvim/pywal/matugen.lua"
+output_path = "~/.cache/wal/base46-dark.lua"
+
+[templates.gtk3]
+input_path = "~/.config/matugen/matugen-themes/templates/gtk-colors.css"
+output_path = "~/.config/gtk-3.0/colors.css"
+
+[templates.gtk4]
+input_path = "~/.config/matugen/matugen-themes/templates/gtk-colors.css"
+output_path = "~/.config/gtk-4.0/colors.css"
+
+[templates.vesktop]
+input_path = "~/.config/matugen/matugen-themes/templates/system24-matugen.theme.css"
+output_path = "~/.config/vesktop/themes/system24-matugen.theme.css"
+
+[templates.obsidian]
+input_path = "~/.config/matugen/matugen-themes/templates/obsidian-matugen.css"
+output_path = "~/Documents/obsidian-go/.obsidian/snippets/obsidian-matugen.css"
+
+[templates.vscode]
+input_path = "~/.config/matugen/matugen-themes/templates/hyprlunavsc.json"
+output_path = "~/.vscode/extensions/hyprluna.hyprluna-theme-1.0.2/themes/hyprluna.json"
+
+[templates.spotify]
+input_path = "~/.config/matugen/matugen-themes/templates/color-spotify.ini"
+output_path = "~/.config/spicetify/Themes/matugen_text/color.ini"
+post_hook = "spicetify apply"
+
+[config.custom_colors.red]
+color = "#FF0000"
+blend = true
+
+[config.custom_colors.green]
+color = "#00FF00"
+blend = true
+
+[config.custom_colors.yellow]
+color = "#FFFF00"
+blend = true
+
+[config.custom_colors.blue]
+color = "#0000FF"
+blend = true
+
+[config.custom_colors.magenta]
+color = "#FF00FF"
+blend = true
+
+[config.custom_colors.cyan]
+color = "#00FFFF"
+blend = true
+
+[config.custom_colors.white]
+color = "#FFFFFF"
+blend = true
