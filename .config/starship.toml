@@ -1,0 +1,98 @@
+# ~/.config/starship.toml - Aurora Theme (Fixed)
+# Theme được thiết kế với gradient màu và biểu tượng hiện đại
+
+# Tắt dòng trống để tối ưu không gian
+add_newline = false
+
+# Format tổng thể với gradient màu đẹp - ĐÃ SỬA
+format = """
+[╭─](bold bright-black)\
+$username\
+$hostname\
+[  ](bold bright-cyan)\
+$directory\
+$git_branch\
+$git_status\
+$python\
+$nodejs\
+$rust\
+$package\
+$cmd_duration
+[╰─](bold bright-black)$character"""
+
+# Username với gradient tím-xanh - ĐÃ SỬA format
+[username]
+show_always = true
+style_user = "bold bright-purple"
+style_root = "bold red"
+format = "[$user](${style})"
+
+# Hostname với màu cyan đẹp - ĐÃ SỬA format
+[hostname]
+ssh_only = false
+format = "[@$hostname]($style)"
+style = "bold bright-cyan"
+
+# Directory với gradient xanh lá
+[directory]
+format = "[ $path]($style)"
+style = "bold bright-green"
+truncation_length = 3
+truncate_to_repo = false
+home_symbol = "~"
+read_only = " "
+
+# Git branch với biểu tượng đẹp
+[git_branch]
+format = "[ $branch]($style)"
+style = "bold bright-yellow"
+symbol = " "
+
+# Git status với màu sắc rõ ràng
+[git_status]
+format = "[$all_status$ahead_behind]($style)"
+style = "bold bright-red"
+conflicted = "🏳"
+ahead = "⇡${count}"
+behind = "⇣${count}"
+diverged = "⇕⇡${ahead_count}⇣${behind_count}"
+up_to_date = "✓"
+untracked = "🤷"
+stashed = "📦"
+modified = "📝"
+staged = "[++($count)](green)"
+renamed = "👅"
+deleted = "🗑"
+
+# Biểu tượng prompt với gradient
+[character]
+success_symbol = "[λ](bold bright-green)"
+error_symbol = "[λ](bold bright-red)"
+vicmd_symbol = "[❮](bold bright-yellow)"
+
+# Thời gian thực thi lệnh
+[cmd_duration]
+format = "[ $duration]($style)"
+style = "bold bright-yellow"
+min_time = 2000
+
+# Python với biểu tượng đẹp
+[python]
+format = "[ $version]($style)"
+style = "bold bright-blue"
+python_binary = "python3"
+
+# Node.js
+[nodejs]
+format = "[ $version]($style)"
+style = "bold bright-green"
+
+# Rust
+[rust]
+format = "[ $version]($style)"
+style = "bold bright-red"
+
+# Package version
+[package]
+format = "[ $version]($style)"
+style = "bold bright-magenta"

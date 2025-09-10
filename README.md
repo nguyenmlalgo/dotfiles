@@ -38,5 +38,6 @@ pacman -S \
   maim \
   fish \
   rofi \
-  picom 
+  picom \
+  greenclip \  
 ```
